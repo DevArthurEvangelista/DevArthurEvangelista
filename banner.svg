@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">Arthur Evangelista — IA, dados e automação</title>
+  <desc id="desc">Capa grafite com tipografia clara. À direita, linhas de dados convergem em um sinal de telemetria. O movimento é decorativo e respeita a preferência por movimento reduzido.</desc>
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#313a3b"/>
+    </pattern>
+    <clipPath id="art"><rect x="700" y="74" width="532" height="260"/></clipPath>
+    <path id="trace1" d="M710 103 H770 C852 103 849 204 934 204 H990 C1013 204 1016 160 1038 160 S1062 233 1084 233 S1106 183 1128 183 S1151 209 1173 176 S1208 160 1230 135"/>
+    <path id="trace2" d="M710 139 H784 C853 139 856 204 934 204"/>
+    <path id="trace3" d="M710 175 H800 C865 175 859 204 934 204"/>
+    <path id="trace4" d="M710 211 H934"/>
+    <path id="trace5" d="M710 247 H800 C865 247 859 218 934 218"/>
+    <path id="trace6" d="M710 283 H784 C853 283 856 218 934 218"/>
+    <path id="trace7" d="M710 319 H770 C852 319 849 218 934 218 H990 C1013 218 1016 174 1038 174 S1062 247 1084 247 S1106 197 1128 197 S1151 223 1173 190 S1208 174 1230 149"/>
+  </defs>
+  <style>
+    .sans { font-family: Arial, Helvetica, sans-serif; }
+    .mono { font-family: 'Courier New', monospace; }
+    .packet { stroke-dasharray: 18 880; stroke-dashoffset: 898; animation: travel 12s linear infinite; }
+    .p2 { animation-delay: -4s; }
+    .p3 { animation-delay: -8s; }
+    @keyframes travel { to { stroke-dashoffset: 0; } }
+    @media (prefers-reduced-motion: reduce) { .packet { animation: none; stroke-dasharray: none; opacity: .25; } }
+  </style>
+  <rect width="1280" height="420" rx="8" fill="#111718"/>
+  <rect x="700" y="74" width="532" height="260" fill="url(#grid)"/>
+  <path d="M48 46 H78" stroke="#95d7c6" stroke-width="3"/>
+  <text x="92" y="51" fill="#a5b4b1" class="mono" font-size="14" letter-spacing="2">DEV / ARTHUR EVANGELISTA</text>
+  <text x="1232" y="51" fill="#83928f" class="mono" font-size="13" text-anchor="end" letter-spacing="1.5">CUIABÁ, BR</text>
+
+  <text x="45" y="151" fill="#f2f1eb" class="sans" font-size="74" font-weight="700" letter-spacing="-3">Arthur</text>
+  <text x="45" y="229" fill="#f2f1eb" class="sans" font-size="74" font-weight="700" letter-spacing="-3">Evangelista</text>
+  <text x="49" y="281" fill="#b1c0bc" class="sans" font-size="22">Inteligência artificial, dados e automação.</text>
+
+  <g clip-path="url(#art)" fill="none" stroke-width="1.5">
+    <g stroke="#3d625b">
+      <use href="#trace1"/><use href="#trace2"/><use href="#trace3"/>
+      <use href="#trace4"/><use href="#trace5"/><use href="#trace6"/><use href="#trace7"/>
+    </g>
+    <g stroke="#9ce5d0" stroke-width="2.5" stroke-linecap="round">
+      <use href="#trace1" class="packet"/>
+      <use href="#trace3" class="packet p2"/>
+      <use href="#trace7" class="packet p3"/>
+    </g>
+    <path d="M934 204 H990 C1013 204 1016 160 1038 160 S1062 233 1084 233 S1106 183 1128 183 S1151 209 1173 176 S1208 160 1230 135" stroke="#95d7c6" stroke-width="2"/>
+  </g>
+  <g fill="#95d7c6">
+    <circle cx="710" cy="103" r="3"/><circle cx="710" cy="139" r="3"/>
+    <circle cx="710" cy="175" r="3"/><circle cx="710" cy="211" r="3"/>
+    <circle cx="710" cy="247" r="3"/><circle cx="710" cy="283" r="3"/><circle cx="710" cy="319" r="3"/>
+  </g>
+  <rect x="927" y="199" width="11" height="24" rx="2" fill="#111718" stroke="#d5b68e" stroke-width="1.5"/>
+  <g class="mono" font-size="11" fill="#8da29b" letter-spacing="1.5">
+    <text x="710" y="351">DADOS</text><text x="906" y="351">PROCESSO</text><text x="1232" y="351" text-anchor="end">SINAL</text>
+  </g>
+  <path d="M48 374 H1232" stroke="#34413e"/>
+  <text x="48" y="403" fill="#a8bab4" class="mono" font-size="13" letter-spacing="1.6">SOFTWARE / ANÁLISE / TELEMETRIA</text>
+  <text x="1232" y="403" fill="#a8bab4" class="mono" font-size="13" text-anchor="end" letter-spacing="1">IFMT · IA &amp; CIÊNCIAS DE DADOS</text>
+</svg>
